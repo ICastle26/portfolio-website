@@ -3,64 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Isabel Castillo — web developer and Information Science student focused on secure, user-friendly software.">
     <title>Isabel Castillo | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+    <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
     <!-- HERO SECTION -->
     <header class="hero">
         <h1>Isabel Castillo</h1>
-        <p class="tagline">Software Developer</p>
+        <p class="tagline">Web Developer &middot; Cybersecurity-Minded</p>
         <a href="#projects" class="btn">View My Work</a>
     </header>
 
-    <!-- ABOUT SECTION -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I'm an entry‑level software developer who loves learning, building, and solving problems.
-            I pick up new technologies quickly and enjoy turning ideas into real, working projects.
-            I'm passionate about growing in this field and contributing to meaningful, user‑focused software.
-        </p>
-    </section>
+    <main>
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I'm a developer based in Tampa, FL, with an A.S. in Cybersecurity and a B.S. in
+                Information Science in progress at the University of South Florida. I build websites
+                for small businesses through my studio, Thrivura Creative, and I like projects
+                where good design and good security go together.
+            </p>
+            <p>
+                At work I've built dashboards and automations that streamline everyday office
+                tasks, and I'm always looking for the next thing to learn and build.
+            </p>
+        </section>
 
-    <!-- SKILLS SECTION -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul class="skills-list">
-            <li>Python</li>
-            <li>JavaScript</li>
-            <li>HTML & CSS</li>
-            <li>React (beginner)</li>
-            <li>Git & GitHub</li>
-            <li>REST APIs</li>
-            <li>Problem Solving</li>
-            <li>Fast Learner</li>
-            <li>Agile & Team Collaboration</li>
-        </ul>
-    </section>
+        <!-- SKILLS SECTION -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>JavaScript</li>
+                <li>HTML &amp; CSS</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>SQL</li>
+                <li>Git &amp; GitHub</li>
+                <li>REST APIs</li>
+                <li>WordPress</li>
+                <li>Responsive Design</li>
+                <li>PowerShell</li>
+                <li>Active Directory</li>
+            </ul>
+        </section>
 
-    <!-- PROJECTS SECTION -->
-    <section id="projects">
-        <h2>Projects</h2>
+        <!-- PROJECTS SECTION -->
+        <section id="projects">
+            <h2>Projects</h2>
 
-        <div class="project-card">
-            <img src="assets/project1.png" alt="Project screenshot">
-            <h3>Project Title</h3>
-            <p>A short description of what the project does and what technologies you used.</p>
-            <a href="#" class="btn">View on GitHub</a>
-        </div>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <h3>Password Generator</h3>
+                    <p>
+                        A browser app that creates strong passwords using the Web Crypto API
+                        instead of predictable <code>Math.random()</code>, with customizable
+                        options and one-click copy.
+                    </p>
+                    <p class="tech">HTML &middot; CSS &middot; JavaScript</p>
+                    <div class="links">
+                        <a href="https://icastle26.github.io/password-generator/" class="btn">Live Demo</a>
+                        <a href="https://github.com/ICastle26/password-generator" class="btn btn-outline">Code</a>
+                    </div>
+                </article>
 
-    </section>
+                <article class="project-card">
+                    <h3>Task Manager</h3>
+                    <p>
+                        A command-line to-do app that saves tasks to a JSON file and validates
+                        user input so it never crashes on a typo.
+                    </p>
+                    <p class="tech">Python &middot; JSON</p>
+                    <div class="links">
+                        <a href="https://github.com/ICastle26/task-manager" class="btn btn-outline">Code</a>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-    <!-- CONTACT SECTION -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: your email</p>
-        <p>GitHub: github.com/yourusername</p>
-        <p>LinkedIn: your LinkedIn URL</p>
-    </section>
+        <!-- CONTACT SECTION -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <ul class="contact-list">
+                <li>Email: <a href="mailto:castillo22@usf.edu">castillo22@usf.edu</a></li>
+                <li>GitHub: <a href="https://github.com/ICastle26">github.com/ICastle26</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> Isabel Castillo</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
